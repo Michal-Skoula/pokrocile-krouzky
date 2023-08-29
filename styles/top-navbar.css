@@ -1,0 +1,35 @@
+.top-navbar {
+  
+  > nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    background-color: var(--foreground);
+    border-radius:20px;
+    width: calc(100% - 2 * var(--default-margin));
+    height: 100px;
+    margin:var(--default-margin);
+    padding: 0px 20px;
+
+    > ul {
+      display:flex;
+      gap:25px;
+
+      > li {
+        list-style: none;
+        
+        > a > h1 {
+          transition: color 250ms
+        }
+      }
+
+      > li:hover{        
+
+        > a > h1 {
+          color: var(--primary);
+        }     
+      }
+    }
+  }
+}

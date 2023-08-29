@@ -1,0 +1,16 @@
+.main-page {
+  background-color: var(--foreground);
+  position: fixed;
+  border-radius: 20px;
+  width: calc(100vw - 20vw - 3 * var(--default-margin));
+  /* border: 2px solid red; */
+  top: calc(100px + 2 * var(--default-margin));
+  right: var(--default-margin);
+  padding: 30px;
+  height:calc(100vh - 100px - 3 * var(--default-margin));
+
+  > div {
+    overflow-y: scroll;
+    height:100%;
+  }
+}
