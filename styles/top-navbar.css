@@ -78,7 +78,6 @@
         width:100%; 
         > li > a > h1 {
           text-align: end;
-          border: 1px red solid;
         }
         
       }

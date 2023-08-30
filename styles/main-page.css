@@ -3,7 +3,6 @@
   position: fixed;
   border-radius: 20px;
   width: calc(100vw - 20vw - 3 * var(--default-margin));
-  /* border: 2px solid red; */
   top: calc(100px + 2 * var(--default-margin));
   right: var(--default-margin);
   padding: 50px;
@@ -14,8 +13,8 @@
     height:100%;
     scrollbar-color: var(--foreground)
   }
-  > div::-webkit-scrollbar {
+  /* > div::-webkit-scrollbar {
     scrollbar-color: red;
     scrollbar-width: thin;
-  }
+  } */
 }
