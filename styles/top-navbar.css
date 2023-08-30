@@ -14,13 +14,21 @@
 
     > ul {
       display:flex;
-      gap:25px;
+      column-gap:25px;
+    
 
       > li {
         list-style: none;
+        width:100%;
         
         > a > h1 {
-          transition: color 250ms
+          transition: color 250ms;
+        }
+
+        > a > img {
+          height:100%;
+          
+          
         }
       }
 
@@ -32,4 +40,36 @@
       }
     }
   }
+}
+@media screen and (width > 1249px) {
+  #nav-btn-open, #nav-btn-close {
+    display:none;
+  }
+}
+
+@media screen and (width < 1250px) {
+  .top-navbar {
+    > nav{
+      > ul {
+        > .nav-btn {
+          display:block;
+          }
+      
+        }
+      }
+    }
+    .top-navbar ul li:not(#nav-btn-open, #nav-btn-close) {
+      display:none;
+      
+    }
+    .open {
+      
+    }
+  }
+  
+
+
+.navbar-btn {
+  height:60px;
+  width:100%;
 }

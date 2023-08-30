@@ -6,11 +6,16 @@
   /* border: 2px solid red; */
   top: calc(100px + 2 * var(--default-margin));
   right: var(--default-margin);
-  padding: 30px;
+  padding: 50px;
   height:calc(100vh - 100px - 3 * var(--default-margin));
 
   > div {
     overflow-y: scroll;
     height:100%;
+    scrollbar-color: var(--foreground)
+  }
+  > div::-webkit-scrollbar {
+    scrollbar-color: red;
+    scrollbar-width: thin;
   }
 }

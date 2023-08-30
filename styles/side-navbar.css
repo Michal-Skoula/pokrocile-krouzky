@@ -9,7 +9,7 @@
     border-radius: 20px;
     height: calc(100vh - 100px - 3 * var(--default-margin));
     width:20vw;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
     > ul {
       > li {
@@ -31,11 +31,4 @@
       }
     }
   }
-}
-
-@media screen and (width < 1250px) {
-  body{
-    background-color: red;
-  }
-
 }
