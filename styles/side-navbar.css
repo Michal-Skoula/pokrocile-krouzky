@@ -21,9 +21,9 @@
         }
         > a > h3 {
           transition: color 150ms;
-        }  
+        }
       }
-      > li:hover{        
+      > li:hover{
 
         > a > h3:not(.clr-active) {
           color: var(--primary);
