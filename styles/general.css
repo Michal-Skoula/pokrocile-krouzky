@@ -67,3 +67,13 @@ p {
 .hidden {
   display:none !important;
 }
+
+@media screen and (width < 800px) {
+  :root {
+    --h1-font-size: 32px;
+    --h3-font-size: 24px;
+    --p-font-size: 20px;
+    --secondary-font-size: 16px;
+
+  }
+}
