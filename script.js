@@ -16,3 +16,17 @@ function openNavbar() {
   }
 }
 
+
+let mousePos = undefined;
+sideNavbar = document.getElementById('sideNavbar')
+
+// window.addEventListener('mousemove', (event) => {
+//   mousePos = event.clientX;
+//   if(mousePos > sideNavbar.offsetWidth && sideNavbar.className === 'hidden') {
+//     sideNavbar.className = '';
+//   }
+//   else if {
+//     sideNavbar.className = 'hidden';
+//   }
+// })
+

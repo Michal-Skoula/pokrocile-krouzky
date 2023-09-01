@@ -1,17 +1,20 @@
 .main-page {
   background-color: var(--foreground);
   position: fixed;
-  border-radius: 20px;
+  /* border-radius: 0 20px 20px 0; */
   width: calc(100vw - 20vw - 3 * var(--default-margin));
   top: calc(100px + 2 * var(--default-margin));
   right: var(--default-margin);
-  padding: 50px;
+  padding: var(--default-margin) 0 var(--default-margin) var(--default-margin);
   height:calc(100vh - 100px - 3 * var(--default-margin));
 
   > div {
     overflow-y: scroll;
     height:100%;
-    scrollbar-color: var(--foreground)
+    margin-right:30px;
+    > h1, h2, h3, p, a {
+      margin-right:10px;
+    }
   }
   /* > div::-webkit-scrollbar {
     scrollbar-color: red;

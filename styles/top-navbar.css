@@ -1,12 +1,16 @@
+#nav-btn-open, #nav-btn-close {
+  display:none;
+  cursor: pointer;
+}
+
 .top-navbar {
-  
   > nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
     position:fixed;
     background-color: var(--foreground);
-    border-radius:20px;
+    /* border-radius:20px; */
     width: calc(100% - 2 * var(--default-margin));
     height: 100px;
     margin:var(--default-margin);
@@ -27,6 +31,7 @@
 
         > a > img {
           height:100%;
+          aspect-ratio: 200/49;
           
           
         }
@@ -40,12 +45,10 @@
     }
   }
 }
-@media screen and (width > 1249px) {
-  #nav-btn-open, #nav-btn-close {
-    display:none;
-  }
-}
 @media screen and (width < 1250px) {
+  #nav-btn-open, #nav-btn-close {
+    display:block;
+  }
   .top-navbar {
     > nav{
       > ul {
@@ -61,6 +64,7 @@
       
     }
     .open > nav {
+      animation:openNav ease-in-out 0.2s;
       padding-top:100px;
       position:absolute;
       width:calc(100vw - 2 * var(--default-margin));
@@ -68,11 +72,11 @@
       z-index: 100;
       overflow: hidden;
       justify-content: space-between;
-      align-items: start;
+      align-items: start; 
       
       > #nav-btn-close {
         position: absolute;
-        top:0;
+        top:100px;
         right:0;
       > ul {
         width:100%; 
@@ -88,7 +92,7 @@
       }
       
         > li {
-          
+
         }
         > ul li:not(#nav-btn-open, #nav-btn-close) {
         display:block;
@@ -106,8 +110,13 @@
       }
     }
   }
-.navbar-btn {
-  height:60px;
-  width:100%;
-  cursor:pointer;
+
+@keyframes openNav {
+  from {
+    height:0px;
+  }
+
+  to {
+    height:calc(100vh - 2 * var(--default-margin));
+  }
 }

@@ -1,17 +1,18 @@
 .side-navbar {
-  
   > nav {
     position: fixed;
     top: calc(100px + 2 * var(--default-margin));
     margin-left:var(--default-margin);
-    padding:30px 20px;
     background-color: var(--foreground);
-    border-radius: 20px;
+    /* border-radius: 20px 0px 0px 20px; */
     height: calc(100vh - 100px - 3 * var(--default-margin));
     width:20vw;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 
     > ul {
+      margin:30px 10px;
+      word-wrap: break-word;
+
       > li {
         list-style: none;
         margin-bottom:15px;
@@ -30,5 +31,21 @@
         } 
       }
     }
+  }
+}
+/* @media screen and (height < 1000px) {
+  .side-navbar > nav {
+    
+  }
+}
+@media screen and (width < 600px) {
+  .side-navbar > nav {
+    overflow-y: scroll;
+  }
+} */
+
+@media screen and (width < 1000px) {
+  :root {
+    --default-margin:3vw;
   }
 }
