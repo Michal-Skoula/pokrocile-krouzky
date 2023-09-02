@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BA Minecraft Pokročilé kroužky</title>
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/top-navbar.css">
-  <link rel="stylesheet" href="styles/side-navbar.css">
-  <link rel="stylesheet" href="styles/main-page.css">
-  <link rel="stylesheet" href="styles/scrollbar.css">
-  <link rel="stylesheet" href="styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/top-navbar.css">
+  <link rel="stylesheet" href="../styles/side-navbar.css">
+  <link rel="stylesheet" href="../styles/main-page.css">
+  <link rel="stylesheet" href="../styles/scrollbar.css">
 </head>
 <body>
   <section class="top-navbar">
     <nav>
-      <a tabindex="0" class="logo" href="https://bridgeacademy.cz"><img alt="bridge-academy-logo" src="assets/images/BA-logo.png"></a>
+      <a tabindex="0" class="logo" href="https://bridgeacademy.cz"><img alt="bridge-academy-logo" src="../assets/images/BA-logo.png"></a>
       <ul>
         <li tabindex="0" class="nav-btn" id="nav-btn-open"><a onclick="openNavbar()"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path class="navbar-btn" fill="white" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         <li tabindex="0" class="nav-btn hidden" id="nav-btn-close"><a onclick="openNavbar()"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path class="navbar-btn" fill="white" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="/"><h1 class="clr-primary" >Dashboard</h1></a></li>
-        <li><a href="pages/navody.html"><h1>Návody</h1></a></li>
-        <li><a href="pages/dokumentace.html"><h1>Dokumentace</h1></a></li>
-        <li><a href="pages/ukoly.html"><h1>Úkoly</h1></a></li>
-        <li><a href="pages/projekty.html"><h1>Projekty</h1></a></li>
+        <li><a href="/"><h1>Dashboard</h1></a></li>
+        <li><a href="navody.html"><h1>Návody</h1></a></li>
+        <li><a href="dokumentace.html"><h1 class="clr-primary">Dokumentace</h1></a></li>
+        <li><a href="ukoly.html"><h1>Úkoly</h1></a></li>
+        <li><a href="projekty.html  "><h1>Projekty</h1></a></li>
       </ul>
     </nav>
   </section>
@@ -41,33 +40,6 @@
     </nav>
   </section>
   <section class="main-page">
-    <div class="container">
-      <div class="card">
-        <a href="pages/navody.html">
-          <h1>Návody</h1>
-          <p>Přečti si psané návody nebo si pusť nahrané videonávody!</p>
-        </a>
-        
-      </div>
-      <div class="card">
-        <a href="pages/dokumentace.html">
-          <h1>Dokumentace</h1>
-          <p>Prokopej se zjednodušenou dokumentací přímo z wikipedie!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="pages/ukoly.html">
-          <h1>Úkoly</h1>
-          <p>Potřebuješ si vyzkoušet své znalosti po lekci? Pusť se do úkolů!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="pages/projekty.html">
-          <h1>Projekty</h1>
-          <p>Využij svoje znalosti na maximum a zkus jeden z projektů!</p>
-        </a>
-      </div>
-    </div>
   </section>
 </body>
 <script defer src="script.js"></script>

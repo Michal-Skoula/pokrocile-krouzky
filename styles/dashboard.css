@@ -1,0 +1,78 @@
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  padding: 2vw
+}
+.card {
+  /* aspect-ratio: 1/1; */
+  z-index: 10;
+  border-radius: 25px;
+}
+.card a {
+  display: grid;
+  justify-items: center;
+  height:100%;
+  margin: 0 !important;
+  /* transition-delay: 300ms; */
+  transition: transform 300ms;
+}
+.card a:hover {
+  animation: scaleAnimation ease-in 300ms;
+  transform: scale(1.05);
+}
+.card h1 {
+  vertical-align: top;
+  font-size:40px;
+  margin: 0px;
+  align-self: self-end;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card p {
+  margin:10px 30px 0 30px !important;
+  align-self: self-start;
+  text-align: center;
+  font-size: 20px;
+}
+.card:nth-child(1) {
+  background: var(--secondary);
+  background: linear-gradient(315deg, var(--secondary) 30%, var(--primary) 100%);
+}
+.card:nth-child(2) {
+  background: var(--secondary);
+  background: linear-gradient(45deg, var(--secondary) 30%, var(--primary) 100%);
+}
+.card:nth-child(3) {
+  background: var(--secondary);
+  background: linear-gradient(225deg, var(--secondary) 30%, var(--primary) 100%);
+}
+.card:nth-child(4) {
+  background: var(--secondary);
+  background: linear-gradient(135deg, var(--secondary) 30%, var(--primary) 100%);
+}
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@media screen and (width < 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card:nth-child(1) {
+    background: linear-gradient(315deg, var(--secondary) 30%, var(--primary) 100%);
+  }
+  .card:nth-child(2) {
+    background: linear-gradient(135deg, var(--secondary) 30%, var(--primary) 100%);
+  }
+  .card:nth-child(3) {
+    background: linear-gradient(225deg, var(--secondary) 30%, var(--primary) 100%);
+  }
+  .card:nth-child(4) {
+    background: linear-gradient(45deg, var(--secondary) 30%, var(--primary) 100%);
+  }
+}
